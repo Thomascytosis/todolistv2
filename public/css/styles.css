@@ -1,25 +1,25 @@
 html {
-  background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  background-color: #000000;
+  background-image: -webkit-linear-gradient(90deg, #000000 50%, #dd00ff81 50%);
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
 
 h1 {
-  color: #fff;
+  color: rgb(255, 255, 255);
   padding: 10px;
 }
 
 .box {
   max-width: 400px;
   margin: 50px auto;
-  background: white;
+  background: rgba(255, 255, 255, 0.891);
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 #heading {
-  background-color: #A683E3;
+  background-color: #0077ff;
   text-align: center;
 }
 
@@ -36,7 +36,7 @@ h1 {
 
 input:checked+p {
   text-decoration: line-through;
-  text-decoration-color: #A683E3;
+  text-decoration-color: #0077ff;
 }
 
 input[type="checkbox"] {
@@ -61,8 +61,8 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #A683E3;
-  color: #fff;
+  background-color: #0077ff;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 30px;
   padding-bottom: 6px;
   border-width: 0;
@@ -90,7 +90,7 @@ input[type="text"]:focus {
 }
 
 footer {
-  color: white;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.904);
+  /* color: rgba(0, 0, 0, 0.5); */
   text-align: center;
 }
