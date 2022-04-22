@@ -8,10 +8,11 @@
   },
   "author": "",
   "license": "ISC",
-  "engines": { 
+  "engines": {
     "node": "16.14.0"
   },
   "dependencies": {
+    "aws-sdk": "^2.1120.0",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
