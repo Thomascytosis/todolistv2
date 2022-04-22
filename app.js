@@ -17,8 +17,8 @@ app.use(express.static("public"));
 // const workItems = [];
 
 //Use Mongoose for collecting user input
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
-// mongoose.connect("mongodb+srv://{MONGO_ID}:{MONGO_PSW}@todocluster.xqqgv.mongodb.net/todolistDB?retryWrites=true&w=majority");
+// mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://{MONGO_ID}:{MONGO_PSW}@todocluster.xqqgv.mongodb.net/todolistDB?retryWrites=true&w=majority");
 
 
 const itemsSchema = {
