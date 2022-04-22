@@ -15,12 +15,9 @@ app.use(express.static("public"));
 // Arrays used to collect user input
 // const items = ["Buy Food", "Cook Food", "Eat Food"];
 // const workItems = [];
-const aws = require('aws-sdk');
 
-let s3 = new aws.S3({
-  accessKeyId: process.env.MONGO_ID,
-  secretAccessKey: process.env.MONGO_PSW
-});
+let accessKeyId= process.env.MONGO_ID;
+let secretAccessKey= process.env.MONGO_PSW;
 //Use Mongoose for collecting user input
 // mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
 mongoose.connect("mongodb+srv://{accessKeyId}:{secretAccessKey}@todocluster.xqqgv.mongodb.net/todolistDB?retryWrites=true&w=majority");
