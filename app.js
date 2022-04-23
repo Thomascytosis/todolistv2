@@ -17,8 +17,8 @@ app.use(express.static("public"));
 // const workItems = [];
 
 //Use Mongoose for collecting user input
-// mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
-mongoose.connect("mongodb+srv://"+process.env.MONGO_ID+":"+process.env.MONGO_PSW+"@todocluster.xqqgv.mongodb.net/todolistDB?retryWrites=true&w=majority");
+mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
+// mongoose.connect("mongodb+srv://"+process.env.MONGO_ID+":"+process.env.MONGO_PSW+"@todocluster.xqqgv.mongodb.net/todolistDB?retryWrites=true&w=majority");
 
 
 const itemsSchema = {
@@ -28,13 +28,13 @@ const itemsSchema = {
 const Item = mongoose.model("item", itemsSchema);
 
 const item1 = new Item ({
-  name: "Welcome to your todolist"
+  name: "Welcome to your todolist. To make a Custom List, add a unique list name to the end of this URL. To return to a custom list please remember your new URL."
 });
 const item2 = new Item ({
-  name: "Hit the '+' button to add a new item."
+  name: "Enter your list item below and click the + button to add a new item."
 });
 const item3 = new Item ({
-  name: "<--- Hit the checkbox to delete an item."
+  name: "<--- Click the - button to remove an item. These directions will only appear if there are three or less items in the list."
 });
 
 const defaultItems = [item1, item2, item3];

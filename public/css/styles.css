@@ -1,25 +1,24 @@
 html {
-  background-color: #000000;
-  background-image: -webkit-linear-gradient(90deg, #000000 50%, #dd00ff81 50%);
-  min-height: 1000px;
+  background-color: #181a1b;
+  background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+  /* min-height: 1000px; */
   font-family: 'helvetica neue';
 }
 
 h1 {
-  color: rgb(255, 255, 255);
   padding: 10px;
-}
+  color: rgba(255, 255, 255, 0.904);}
 
 .box {
   max-width: 400px;
   margin: 50px auto;
-  background: rgba(255, 255, 255, 0.891);
+  background:#181a1b;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 #heading {
-  background-color: #0077ff;
+  background-color:rgba(137, 43, 226, 0.387);
   text-align: center;
 }
 
@@ -27,28 +26,41 @@ h1 {
   min-height: 70px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 1px solid #c8c3bc89;
 }
 
 .item:last-child {
   border-bottom: 0;
 }
-
-input:checked+p {
+body{
+  background-color: #181a1b;
+  color:#d1cdc7;
+}
+input:checked {
   text-decoration: line-through;
-  text-decoration-color: #0077ff;
+  text-decoration-color: rgba(137, 43, 226, 0.387);
 }
 
 input[type="checkbox"] {
   margin: 20px;
 }
+/* input[aria-label]:hover::after{
+  content:attr(aria-label);
+  color:blue;
+  background-color:black;
+  position:relative;
+  bottom:1rem;
+  right:2rem;
+  width:3rem;
+} */
+
+
 
 p {
   margin: 0;
   padding: 20px;
   font-size: 20px;
   font-weight: 200;
-  color: #00204a;
 }
 
 form.item {
@@ -56,32 +68,36 @@ form.item {
   margin-left: 20px;
 }
 
-button {
-  min-height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border-color: transparent;
-  background-color: #0077ff;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 30px;
-  padding-bottom: 6px;
-  border-width: 0;
+button:hover{
+  cursor:pointer;
 }
+/* button[aria-label="Add Item to List"]:hover::after{
+  content: attr(aria-label);
+  position: absolute;
+  top: -100%;
+  left: 0;
+} */
 
 input[type="text"] {
   text-align: center;
   height: 60px;
   top: 10px;
-  border: none;
   background: transparent;
   font-size: 20px;
   font-weight: 200;
   width: 313px;
+  border: dashed;
+  border-color:rgba(137, 43, 226, 0.387);
+  border-width:.05rem;
 }
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #A683E3;
+  box-shadow: inset 0 -3px 0 rgba(137, 43, 226, 0.387);
+}
+input[type="text"]:hover{
+  background-color:rgba(137, 43, 226, 0.387);
+  cursor:pointer;
 }
 
 ::placeholder {
