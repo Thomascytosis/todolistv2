@@ -79,16 +79,18 @@ button:hover{
 } */
 
 input[type="text"] {
+  color: rgba(255, 255, 255, 0.904);
+  cursor:text;
   text-align: center;
   height: 60px;
   top: 10px;
   background: transparent;
   font-size: 20px;
   font-weight: 200;
-  width: 313px;
+  /* width: 313px; */
   border: dashed;
-  border-color:rgba(137, 43, 226, 0.387);
-  border-width:.05rem;
+  border-color:rgba(137, 43, 226, 0.493);
+  border-width:.07rem;
 }
 
 input[type="text"]:focus {
@@ -97,7 +99,6 @@ input[type="text"]:focus {
 }
 input[type="text"]:hover{
   background-color:rgba(137, 43, 226, 0.387);
-  cursor:pointer;
 }
 
 ::placeholder {
