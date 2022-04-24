@@ -3,7 +3,7 @@
   <div class="box" id="heading">
     <h1 class="col"> <%= listTitle %> </h1>
   </div>
-
+<%- include("modal") -%>
   <div class="container">
     <% newListItems.forEach(function(item) { %>
       <form action="/delete" method="post">

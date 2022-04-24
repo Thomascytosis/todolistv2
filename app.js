@@ -67,8 +67,6 @@ app.get("/", function(req, res) {
 // const day = date.getDate(); ------Temporary removal
 
   // res.render("list", {listTitle: "Today", newListItems: items});----moved
-
-
 app.post("/", function(req, res){
 //***new Mongoose + DB code */
   const itemName = req.body.newItem;
